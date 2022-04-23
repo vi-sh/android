@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/dreams1"
+    tools:context="test.example.com.verifierclient.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <test.example.com.verifierclient.TitanicTextView
+            android:layout_width="wrap_content"
+            android:fontFamily="serif"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/loginlbl"
+            android:background="@color/midnightblue"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:textColor="@color/darkslategray"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:padding="10dip"
+            android:fontFamily="serif"
+            android:background="@drawable/txtboxstyle"
+            android:textColor="@android:color/black"
+            android:id="@+id/txtboxemail"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:hint="* Username"
+            android:textColorHint="@color/gray"
+            android:imeOptions="normal"
+            android:imeActionId="@+id/login"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:layout_below="@+id/loginlbl"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:padding="10dip"
+            android:fontFamily="serif"
+            android:background="@drawable/txtboxstyle"
+            android:textColor="@android:color/black"
+            android:id="@+id/txtboxpassword"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:hint="* password"
+            android:textColorHint="@color/gray"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:layout_below="@+id/txtboxemail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:fontFamily="serif"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:textSize="14dp"
+            android:text="* fields are mandatory"
+            android:textColor="@color/darkslategray"
+            android:id="@+id/label1"
+            android:gravity="center_vertical"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/txtboxpassword"
+            android:layout_alignLeft="@+id/txtboxpassword"
+            android:layout_alignStart="@+id/txtboxpassword" />
+
+        <Button
+            android:shadowColor="@color/seashell"
+            android:shadowRadius="5"
+            android:shadowDy="3"
+            android:shadowDx="2"
+            android:padding="10dip"
+            android:background="@drawable/buttoncustomize"
+            android:fontFamily="serif"
+            android:clickable="true"
+            android:id="@+id/lgbtnsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkslategray"
+            android:text="Submit"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="2.03"
+            android:layout_below="@+id/label1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" />
+
+        <test.example.com.verifierclient.TitanicTextView
+            android:id="@+id/namelblvishloginact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verifier client"
+            android:textIsSelectable="false"
+            android:background="@color/black"
+            android:textColor="@color/teal"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <test.example.com.verifierclient.TitanicTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User ?"
+            android:textColor="@color/darkslategray"
+            android:fontFamily="serif"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:id="@+id/newuserlbl"
+            android:layout_marginTop="60dp"
+            android:layout_below="@+id/lgbtnsubmit"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

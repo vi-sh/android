@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Custom" parent="android:Theme.DeviceDefault.Light.Dialog.MinWidth">
+        <item name="DialogTitleAppearance">@style/vish1</item>
+        <item name="DialogTitleText">@string/LOADING</item>
+        <item name="DialogSpotColor">@color/lime</item>
+        <item name="DialogSpotCount">20</item>
+    </style>
+
+    <style name="vish1">
+        <item name="android:textColor">@color/lime</item>
+        <item name="android:fontFamily">sans-serifs</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="lightbgtheme" parent="android:Theme.DeviceDefault.Light.Dialog.MinWidth" >
+
+        <item name="android:colorBackground">@color/sienna</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+</resources>
